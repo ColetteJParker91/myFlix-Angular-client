@@ -3,8 +3,9 @@
     <!-- User Profile -->
     <mat-card class="user-profile-card">
         <mat-card-header class="user-profile-card-header">
-            <mat-card-title>Profile Information</mat-card-title>
+            <mat-card-title>Your Profile:</mat-card-title>
         </mat-card-header>
+        <mat-divider inset></mat-divider>
 
         <!-- View Profile Information -->
         <mat-card-content class="user-profile-card-content">
@@ -12,21 +13,27 @@
             <p><b>Email:</b> {{user.Email}}</p>
             <p><b>Birthday:</b> {{user.Birthday | date }}</p>
         </mat-card-content>
+        <mat-divider inset></mat-divider>
 
         <!-- Edit Profile Information & Delete Profile -->
         <mat-card-actions class="user-profile-actions">
 
-            <button mat-raised-button (click)="openEditProfileDialog()" color="primary">
+            <button 
+            mat-raised-button 
+            (click)="openEditProfileDialog()" 
+            color="primary">
                 <mat-icon>edit</mat-icon>
                 Edit Profile
             </button>
-            <button mat-raised-button (click)="deleteProfile()" color="warn">
+            <button mat-raised-button 
+            (click)="deleteProfile()" 
+            color="warn">
                 <mat-icon>delete_forever</mat-icon>
                 Delete Profile
             </button>
 
         </mat-card-actions>
+    </mat-card-footer>    
     </mat-card>
-
-
 </div>
+<app-footer></app-footer>

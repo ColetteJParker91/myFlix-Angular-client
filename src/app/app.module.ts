@@ -5,6 +5,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
 
 import { FormsModule } from '@angular/forms';
 
@@ -29,6 +33,7 @@ import { SynopsisComponent } from './synopsis/synopsis.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
@@ -50,7 +55,8 @@ const appRoutes: Routes = [
     DirectorComponent,
     SynopsisComponent,
     NavbarComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,7 +71,10 @@ const appRoutes: Routes = [
     MatSnackBarModule,
     MatIconModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    MatToolbarModule,
+    MatDividerModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
