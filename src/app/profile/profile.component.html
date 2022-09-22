@@ -1,4 +1,5 @@
 <app-navbar></app-navbar>
+
 <div class="user-profile-page">
     <!-- User Profile -->
     <mat-card class="user-profile-card">
@@ -9,9 +10,9 @@
 
         <!-- View Profile Information -->
         <mat-card-content class="user-profile-card-content">
-            <p><b>Username:</b> {{user.Username}}</p>
-            <p><b>Email:</b> {{user.Email}}</p>
-            <p><b>Birthday:</b> {{user.Birthday | date }}</p>
+            <mat-card-subtitle> <span style="font-weight: bold; color:black">Username:  </span>{{user.Username}}</mat-card-subtitle>
+        <mat-card-subtitle> <span style="font-weight: bold; color:black">Email:  </span>{{user.Email}}</mat-card-subtitle>
+        <mat-card-subtitle> <span style="font-weight: bold; color:black">Birthday:  </span>{{user.Birthday | date}}</mat-card-subtitle>
         </mat-card-content>
         <mat-divider inset></mat-divider>
 
@@ -32,8 +33,7 @@
                 Delete Profile
             </button>
 
-        </mat-card-actions>
-    </mat-card-footer>    
+        </mat-card-actions>  
     </mat-card>
 </div>
 <app-footer></app-footer>
