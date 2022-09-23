@@ -28,15 +28,25 @@ export class ProfileComponent implements OnInit {
     this.getUser();
   }
 
+  /**
+   * Gets user data from API
+   * 
+   * @function getUser
+   */
   
   getUser(): void {
     this.fetchApiData.getUser().subscribe((resp: any) => {
       this.user = resp;
       console.log(this.user);
       return this.user;
-    })
+    });
   }
 
+  /**
+   * Opens dialog for User-Update component
+   * 
+   * @openUpdateUserDialog
+   */
   
   openEditProfileDialog(): void {
     this.dialog.open(EditProfileComponent, {
@@ -44,6 +54,11 @@ export class ProfileComponent implements OnInit {
     })
   }
 
+  /**
+   * Deletes user data from API
+   * 
+   * @function deleteUser
+   */
 
   deleteProfile(): void {
     if (confirm('Are you sure you want to delete your account? This cannnot be undone.')) {

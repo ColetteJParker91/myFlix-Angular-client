@@ -13,6 +13,7 @@ const apiUrl = 'https://best-marvel-movies.herokuapp.com/';
 })
 export class FetchApiDataService {
   // Inject HttpClient module to constructor params
+   // This will provide the HttpClient to the entire class,  making it available via this http
   constructor(private http: HttpClient) { }
 
   /**
