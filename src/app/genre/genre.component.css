@@ -1,0 +1,28 @@
+.genre-dialog {
+  background-color: #fff;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+.genre-dialog-title {
+  color: #393f46;
+}
+
+.genre-dialog-content {
+  color: #393f46;
+}
+
+::ng-deep .genre-custom > mat-dialog-container {
+  background-color: #fff;
+}
+
+.genre-close-button.mat-stroked-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  line-height: 14px;
+  min-width: auto;
+  border: none;
+  font-size: 20px;
+}/*# sourceMappingURL=genre.component.css.map */

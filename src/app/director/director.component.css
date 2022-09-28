@@ -1,0 +1,28 @@
+.director-dialog {
+  background-color: #fff;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+.director-dialog-title {
+  color: #393f46;
+}
+
+.director-dialog-content {
+  color: #393f46;
+}
+
+::ng-deep .director-custom > mat-dialog-container {
+  background-color: #fff;
+}
+
+.director-close-button.mat-stroked-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px;
+  line-height: 14px;
+  min-width: auto;
+  border: none;
+  font-size: 20px;
+}/*# sourceMappingURL=director.component.css.map */

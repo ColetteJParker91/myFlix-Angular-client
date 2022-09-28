@@ -1,0 +1,21 @@
+.signup-dialog {
+  background-color: #fff;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+.signup-dialog-title {
+  color: #393f46;
+}
+
+.signup-dialog-content {
+  color: #393f46;
+}
+
+::ng-deep .signup-custom > mat-dialog-container {
+  background-color: #fff;
+}
+
+.signup-actions {
+  display: flex;
+}/*# sourceMappingURL=user-registration-form.component.css.map */

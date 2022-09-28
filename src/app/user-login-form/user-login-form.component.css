@@ -1,0 +1,21 @@
+.login-dialog {
+  background-color: #fff;
+  margin-top: 0px;
+  box-shadow: none;
+}
+
+.login-dialog-title {
+  color: #393f46;
+}
+
+.login-dialog-content {
+  color: #393f46;
+}
+
+::ng-deep .login-custom > mat-dialog-container {
+  background-color: #fff;
+}
+
+.login-actions {
+  display: flex;
+}/*# sourceMappingURL=user-login-form.component.css.map */

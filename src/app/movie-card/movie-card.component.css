@@ -1,0 +1,50 @@
+.movie-view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #eef2f6;
+}
+
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 10px 5px 5px #e9ecef;
+  background-color: #fff;
+  max-width: 280px;
+  width: 280px;
+  margin: 15px;
+  padding: 20px 3px;
+}
+
+.mat-card-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  color: #393f46;
+}
+
+.movies-title {
+  display: flex;
+  max-width: 210px;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mat-icon-button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}/*# sourceMappingURL=movie-card.component.css.map */

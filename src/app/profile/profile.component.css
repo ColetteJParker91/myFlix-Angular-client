@@ -1,0 +1,34 @@
+.user-profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: #eef2f6;
+}
+
+.user-profile-card {
+  margin-top: 50px;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  box-shadow: 10px 5px 5px #e9ecef;
+  background-color: #fff;
+}
+
+.user-profile-card-header {
+  margin-bottom: 20px;
+  color: #393f46;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-card-content {
+  color: #393f46;
+}
+
+.mat-card > .mat-card-actions:last-child {
+  margin-bottom: -8px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+}/*# sourceMappingURL=profile.component.css.map */
